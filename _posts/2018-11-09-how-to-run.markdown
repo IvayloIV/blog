@@ -1,0 +1,7 @@
+---
+layout: blog
+title:  "How to Run"
+date:   2018-11-09 22:46:45 +0200
+---
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus congue consectetur ultricies. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed arcu lorem, porttitor in maximus sed, ultricies at felis. Aenean lacus odio, laoreet sit amet sem at, facilisis aliquam mauris.

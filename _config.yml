@@ -1,0 +1,27 @@
+# Site settings
+
+title: My Blog
+description: My Blog
+
+email: blog@gmail.com
+baseurl: "/"
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+twitter_username: sos
+github_username: petrov
+
+future: true
+markdown: kramdown
+plugins:
+  - jekyll-feed
+
+destination: docs
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - package.json
+  - gulpfile.js
+  - docs
+  - node_modules
+  - scss
