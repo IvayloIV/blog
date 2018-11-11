@@ -4,7 +4,7 @@ title: My Blog
 description: My Blog
 
 email: blog@gmail.com
-baseurl: /blog
+baseurl: /
 url: https://ivayloiv.github.io/blog/
 
 twitter_username: sos
