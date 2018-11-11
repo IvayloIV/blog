@@ -1,0 +1,21 @@
+@media all and (max-width: 1000px){
+  .blog-article {
+    flex-direction: column;
+  }
+
+  .blog-article a {
+    width: 100%;
+  }
+
+  .blog-article a:not(:last-of-type) {
+    margin-bottom: 2rem;
+  }
+
+  main > p {
+    width: 80%;
+  }
+
+  .pictures p{
+    margin: 0 2rem;
+  }
+}

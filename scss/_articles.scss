@@ -26,9 +26,16 @@
 .blog-article h3 {
   color: #020;
   font-style: italic;
+  padding-bottom: 0;
 }
 
 main > p {
   width: 50%;
   margin: 2rem auto;
+}
+
+.blog-article h5 {
+  font-weight: 500;
+  font-style: italic;
+  margin-bottom: 0.6rem;
 }
