@@ -5,9 +5,12 @@ body {
 
 header label {
   position: relative;
-  z-index: 4;
   cursor: pointer;
   font-size: 1.8rem;
+}
+
+header ul li {
+  z-index: 10;
 }
 
 header label:hover {

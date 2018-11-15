@@ -1,9 +1,18 @@
 @keyframes navigationAnimate {
-  0% {
-  }
-
   100% {
     transform: translate(0, 0);
     opacity: 100;
+  }
+}
+
+@keyframes iconAnimation {
+  0% {
+    transform: scale(0) rotate(0);
+    color: #888;
+  }
+
+  100% {
+    transform: scale(1.5) rotate(360deg);
+    color: #525252;
   }
 }

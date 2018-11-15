@@ -1,0 +1,75 @@
+.login {
+  width: 45%;
+  margin: 2rem auto;
+  text-align: center;
+  background-color: #E0E0E0;
+  border-radius: 20px;
+  box-shadow: 10px 10px 50px 3px rgba(0,0,0,0.3);
+}
+
+.login h4 {
+  font-size: 1.4rem;
+  font-style: italic;
+  padding-top: 1.4rem;
+}
+
+.login form {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.login input {
+  width: 100%;
+  padding: 0.4rem 0 0.4rem 2.6rem;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #888888;
+}
+
+.login input:focus::placeholder {
+  color: transparent;
+}
+
+.login label {
+  position: relative;
+  margin-bottom: 1.5rem;
+  z-index: 1;
+}
+
+.login label span {
+  position: absolute;
+  top: 0.7rem;
+  left: 1rem;
+  z-index: 2;
+  color: #888888;
+}
+
+::placeholder {
+  color: #888;
+  font-style: italic;
+}
+
+input[type="submit"] {
+  padding: 0.4rem;
+  width: 25%;
+  font-weight: 800;
+  color: #888;
+  background: #EDD5ED;
+  border: 2px solid #888;
+  cursor: pointer;
+  outline: none;
+  margin: 1.2rem auto 0;
+  transition: all 0.3s ease-in-out;
+}
+
+input[type="submit"]:hover {
+  background: #888;
+  color: #EDD5ED;
+}
+
+.login input:focus + span {
+  animation: iconAnimation 0.3s ease-in-out;
+  animation-fill-mode: forwards;
+}
