@@ -23,6 +23,7 @@ header label:hover {
 
 .close {
   display: none;
+  z-index: 2;
 }
 
 #checkbox:checked + header .open {
