@@ -1,14 +1,14 @@
 @media all and (max-width: 1000px){
   .blog-article {
     flex-direction: column;
-  }
 
-  .blog-article a {
-    width: 100%;
-  }
+    a {
+      width: 100%;
 
-  .blog-article a:not(:last-of-type) {
-    margin-bottom: 2rem;
+      &:not(:last-of-type) {
+        margin-bottom: 2rem;
+      }
+    }
   }
 
   main > p {

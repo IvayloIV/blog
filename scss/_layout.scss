@@ -3,19 +3,22 @@ body {
   height: 100vh;
 }
 
-header label {
-  position: relative;
-  cursor: pointer;
-  font-size: 1.8rem;
+header {
+  label {
+    position: relative;
+    cursor: pointer;
+    font-size: 1.8rem;
+  }
+
+  ul li {
+    z-index: 10;
+  }
+
+  label:hover {
+    opacity: 0.6;
+  }
 }
 
-header ul li {
-  z-index: 10;
-}
-
-header label:hover {
-  opacity: 0.6;
-}
 
 #checkbox {
   display: none;
@@ -26,14 +29,16 @@ header label:hover {
   z-index: 2;
 }
 
-#checkbox:checked + header .open {
-  display: none;
-}
+#checkbox:checked + header {
+  .open {
+    display: none;
+  }
 
-#checkbox:checked + header .close {
-  display: block;
-}
+  .close {
+    display: block;
+  }
 
-#checkbox:checked + header nav {
-  display: flex;
+  nav {
+    display: flex;
+  }
 }

@@ -4,8 +4,7 @@ title: My Blog
 description: My Blog
 email: blog@gmail.com
 
-baseurl: /blog
-myurl: /blog
+baseurl: "/blog"
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 twitter_username: sos

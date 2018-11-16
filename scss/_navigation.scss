@@ -8,44 +8,48 @@ nav {
     align-items: center;
     justify-content: center;
     display: none;
-}
 
-nav ul{
-    padding: 0;
-    display: flex;
-    list-style: none;
-    justify-content: center;
-    flex-direction: column;
-}
+    ul {
+        padding: 0;
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        flex-direction: column;
 
-nav li a:not(:last-of-type) {
-    margin-bottom: 2rem;
-}
+        a {
+            display: block;
+            text-decoration: none;
+            color: #000;
+            font-size: 1rem;
+            padding: 1rem 1.2rem;
+            background-color: white;
+            border-radius: 0.5rem;
+            border: 2px solid transparent;
+            transition: border 0.2s ease-in-out;
+            transform: translate(-4rem, 2rem);
+            opacity: 0;
+            animation: navigationAnimate 0.4s ease-in-out;
+            animation-fill-mode: forwards;
+        }
+    }
 
-nav li {
-    padding: 0.5rem 1.5rem;
-}
+    li {
+        padding: 0.5rem 1.5rem;
 
-nav ul a {
-    display: block;
-    text-decoration: none;
-    color: #000;
-    font-size: 1rem;
-    padding: 1rem 1.2rem;
-    background-color: white;
-    border-radius: 0.5rem;
-    border: 2px solid transparent;
-    transition: border 0.2s ease-in-out;
-    transform: translate(-4rem, 2rem);
-    opacity: 0;
-    animation: navigationAnimate 0.4s ease-in-out;
-    animation-fill-mode: forwards;
-}
+        a:not(:last-of-type) {
+            margin-bottom: 2rem;
+        }
 
-nav span{
-    padding-right: 0.8rem;
-}
+        @for $i from 1 through 10 {
+            &:nth-of-type(#{$i}) a { animation-delay: 0.1s * $i; }
+        }
+    }
 
-nav a:hover {
-    border: 2px solid #888888;
+    span{
+        padding-right: 0.8rem;
+    }
+
+    a:hover {
+        border: 2px solid #888888;
+    }
 }

@@ -4,7 +4,7 @@ layout: blog
 
 <section class="blog-article">
     {% for post in site.posts %}
-    <a href="{{ site.myurl }}{{ post.url }}">
+    <a href="{{ site.baseurl }}{{ post.url }}">
         <article>
             <h3>{{ post.title }}</h3>
             <h5>{{ post.tags[0] }}</h5>
