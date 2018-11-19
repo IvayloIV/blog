@@ -31,8 +31,7 @@
     }
 
     &:focus + span {
-      animation: iconAnimation 0.3s ease-in-out;
-      animation-fill-mode: forwards;
+      animation: iconAnimation 0.3s ease-in-out forwards;
     }
   }
 
@@ -61,8 +60,8 @@ input[type="submit"] {
   padding: 0.4rem;
   width: 25%;
   font-weight: 800;
-  color: #888;
-  background: #EDD5ED;
+  //color: #888;
+  //background: #EDD5ED;
   border: 2px solid #888;
   cursor: pointer;
   outline: none;
